@@ -16,6 +16,7 @@ function [H, h, P, AAA] = InitRobot(QQ, NN, DH, jTypes, sScale)
     
     % first AAA
     MQ = LinspaceVect(QQ(:,1), QQ(:,2), NN);
+    jTypes
     MDH = GenerateMultiDH(DH,MQ,jTypes);
     AAA = CalculateRobotMotion(MDH);
     

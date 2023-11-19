@@ -14,7 +14,7 @@ function MDH = GenerateMultiDH(DH,MQ,t)
     nLinks = size(DH, 1);
     
     MDH = zeros(nLinks, 4, size(MQ, 2));
-    
+
     for i = 1:size(MQ,2)
         MDH(:,:,i) = DH;
     
